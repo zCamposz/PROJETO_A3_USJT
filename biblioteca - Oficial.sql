@@ -10,7 +10,7 @@ CREATE TABLE livro(
 );
 
 CREATE TABLE categoria(
-	id_categoria INT AUTO_INCREMENT PRIMARY KEY,
+	id_categoria int UNIQUE primary key,
     nome VARCHAR(300),
     data_Criacao DATETIME DEFAULT CURRENT_TIMESTAMP
 );
@@ -66,7 +66,13 @@ alter table cliente add constraint foreign key (id_login) references login(id_lo
 SELECT * FROM funcionario;
 select * from cliente;
 select * from login;
+select * from categoria;
+select * from livro;
+select * from reserva;
 
+alter table livro add column nota int;
+
+alter table reserva add column status varchar(200);
 
 
 
