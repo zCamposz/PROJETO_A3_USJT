@@ -59,7 +59,6 @@ public class Biblioteca extends javax.swing.JFrame {
                 
                 titulos.setTitulo_livro(nome);
                 titulos.setNota_livro(nota);
-                
                 modelo.addRow(new Object[]{nome,nota,genero});
                 
 //                System.out.println(nome+""+nota);

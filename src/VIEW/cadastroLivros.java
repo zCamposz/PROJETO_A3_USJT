@@ -65,8 +65,18 @@ public class cadastroLivros extends javax.swing.JFrame {
         generoTextField.setBorder(javax.swing.BorderFactory.createTitledBorder("Genero"));
 
         dataTextField.setBorder(javax.swing.BorderFactory.createTitledBorder("Ano de publicação"));
+        dataTextField.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                dataTextFieldActionPerformed(evt);
+            }
+        });
 
         valorTextField.setBorder(javax.swing.BorderFactory.createTitledBorder("Valor"));
+        valorTextField.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                valorTextFieldActionPerformed(evt);
+            }
+        });
 
         notaTextField.setBorder(javax.swing.BorderFactory.createTitledBorder("Nota"));
 
@@ -224,6 +234,14 @@ public class cadastroLivros extends javax.swing.JFrame {
         // TODO add your handling code here:
         dispose();
     }//GEN-LAST:event_jButton1ActionPerformed
+
+    private void valorTextFieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_valorTextFieldActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_valorTextFieldActionPerformed
+
+    private void dataTextFieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_dataTextFieldActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_dataTextFieldActionPerformed
 
     /**
      * @param args the command line arguments
